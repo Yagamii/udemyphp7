@@ -24,10 +24,16 @@
   //$usuario->login("teste","123456");
   //echo $usuario;
 
-  $aluno = new Usuario("Joao", "@resg");
+  //$aluno = new Usuario("Joao", "@resg");
+  //$aluno->insert();
+  //echo $aluno;
 
-  $aluno->insert();
+  $usuario = new Usuario();
 
-  echo $aluno;
+  $usuario->loadById(6);
+
+  $usuario->update("prof", "xingling");
+
+  echo $usuario;
 
  ?>
