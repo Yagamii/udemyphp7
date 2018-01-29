@@ -28,11 +28,16 @@
   //$aluno->insert();
   //echo $aluno;
 
+//  $usuario = new Usuario();
+//  $usuario->loadById(6);
+//  $usuario->update("prof", "xingling");
+//  echo $usuario;
+
   $usuario = new Usuario();
 
-  $usuario->loadById(6);
+  $usuario->loadById(4);
 
-  $usuario->update("prof", "xingling");
+  $usuario->delete();
 
   echo $usuario;
 
